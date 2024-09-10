@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="EasyClick-Trang web tìm kiếm việc làm tiện lợi và hữu ích cho giới trẻ"
+    />
+    <meta name="keyword" content="EasyClick, tìm việc, việc làm" />
+    <title>EasyClick</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!--  -->
+    <!-- Link Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Logo -->
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+    <!--  -->
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!------HEADER SECTION BEGIN------>
+    <header>
+      <div class="wrapper">
+        <div class="container header flex">
+          <div class="nav-left flex">
+            <a class="logo-company flex" href="index.html"
+              ><img src="images/logo-com.png"
+            /></a>
+            <ul class="menu flex">
+              <li class="menu-item flex">
+                <a href="profile.html">Hồ sơ</a>
+                <ul>
+                  <li><a href="profile.html">Profile/CV</a></li>
+                  <li><a href="construction.html">Mẫu CV</a></li>
+                </ul>
+              </li>
+              <li class="menu-item flex">
+                <a href="jobs.html">Việc làm</a>
+                <ul>
+                  <li><a href="jobs.html">Tìm việc</a></li>
+                  <li><a href="jobs.html">Công việc IT</a></li>
+                  <li><a href="jobs.html">Công việc Fulltime</a></li>
+                  <li><a href="jobs.html">Công việc Partime</a></li>
+                </ul>
+              </li>
+              <li class="menu-item flex">
+                <a href="companies.html" style="color: var(--primary-color)"
+                  >Công ty</a
+                >
+              </li>
+              <li class="menu-item flex">
+                <a href="about.html">Về chúng tôi</a>
+              </li>
+              <li class="menu-item flex">
+                <a href="contact.html">Liên lạc</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-right flex">
+            <a href="login.html" class="button-signup"> Đăng Nhập </a>
+            <a href="register.html" class="button-signin"> Đăng ký </a>
+            <a href="construction.html" class="button-resume">
+              Nhà tuyển dụng / Đăng tin
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!------HEADER SECTION END------>
+
+    <!------CONTENT SECTION BEGIN------>
+    <main>
+      <div class="cover-page flex">
+        <h1 class="title-page flex">CÁC CÔNG TY</h1>
+      </div>
+      <!-- Thanh tim kiem -->
+      <div class="research-bar flex">
+        <div class="row flex">
+          <div class="form flex">
+            <input
+              type="text"
+              id="SearchCom"
+              onkeyup="searchCompanyFuntion()"
+              class="flex"
+              placeholder="Nhập tên công ty"
+            />
+          </div>
+        </div>
+        <div>
+          <div class="form">
+            <button class="search"><a href="jobs.html">Tìm kiếm</a></button>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="companies flex">
+        <div class="com-section flex">
+          <h1>DANH SÁCH CÁC CÔNG TY</h1>
+          <div class="com-list flex">
+            <div class="com-card flex">
+              <a href="company_detail.html" class="com-card-header flex">
+                <img class="flex" src="images/company/fpt-banner.webp" alt="" />
+              </a>
+              <div class="com-card-content flex">
+                <h4 class="com-name flex">Công ty Cổ phần viễn thông FPT</h4>
+                <span class="flex"
+                  >" Là thành viên thuộc Tập đoàn công nghệ hàng đầu Việt Nam
+                  FPT, Công ty Cổ phần Viễn thông FPT (tên gọi tắt là FPT
+                  Telecom) hiện là một trong những nhà cung cấp dịch vụ viễn
+                  thông và Internet có uy tín và được khách hàng yêu mến tại
+                  Việt Nam và khu vực."</span
+                >
+              </div>
+            </div>
+            <div class="com-card flex">
+              <a href="company_detail.html" class="com-card-header flex">
+                <img
+                  class="flex"
+                  src="images/company/apollo-banner.webp"
+                  alt=""
+                />
+              </a>
+              <div class="com-card-content flex">
+                <h4 class="com-name flex">
+                  Tổ chức Giáo dục và Đào tạo Apollo Việt Nam
+                </h4>
+                <span class="flex"
+                  >" Chúng tôi thành lập trung tâm Anh ngữ Apollo năm 1995 với
+                  sứ mệnh đào tạo thế hệ trẻ Việt Nam thành công dân toàn cầu để
+                  thúc đẩy sự thịnh vượng, và giúp họ thay đổi thế giới theo
+                  hướng tích cực hơn. Với chúng tôi, phần thưởng lớn nhất là
+                  được nhìn thấy cuộc sống của mọi người tốt đẹp hơn nhờ sự nỗ
+                  lực và nhiệt huyết..."</span
+                >
+              </div>
+            </div>
+            <div class="com-card flex">
+              <a href="company_detail.html" class="com-card-header flex">
+                <img
+                  class="flex"
+                  src="images/company/homecre-banner.webp"
+                  alt=""
+                />
+              </a>
+              <div class="com-card-content flex">
+                <h4 class="com-name flex">
+                  Công Ty Tài Chính TNHH Một Thành Viên Home Credit Việt Nam
+                </h4>
+                <span class="flex"
+                  >" Là một trong những công ty tài chính số dẫn đầu tại Việt
+                  Nam, phục vụ hơn 16 triệu khách hàng trên toàn quốc trong suốt
+                  16 năm qua. Với đội ngũ 6.000 nhân viên tận tâm , Home Credit
+                  cam kết thúc đẩy mạnh mẽ việc tiếp cận tài chính toàn diện và
+                  trao quyền làm chủ tài chính thông qua ứng dụng sáng tạo, tiên
+                  tiến và có trách..."</span
+                >
+              </div>
+            </div>
+            <div class="com-card flex">
+              <a href="company_detail.html" class="com-card-header flex">
+                <img
+                  class="flex"
+                  src="images/company/viettel-banner.webp"
+                  alt=""
+                />
+              </a>
+              <div class="com-card-content flex">
+                <h4 class="com-name flex">
+                  TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI
+                </h4>
+                <span class="flex"
+                  >" Tập đoàn Viễn thông Quân đội Viettel - giữ vững vị thế Nơi
+                  làm việc tốt nhất Việt Nam trong 06 năm liên tiếp trong ngành
+                  Viễn thông, Hạ tầng, IT (theo khảo sát Anphabe) là nhà cung
+                  cấp dịch vụ số toàn cầu, luôn đi đầu trong đổi mới sáng tạo và
+                  luôn lắng nghe, thấu hiểu để đem tới những dịch vụ tốt nhất
+                  cho khách hàng. Viettel..."</span
+                >
+              </div>
+            </div>
+            <div class="com-card flex">
+              <a href="company_detail.html" class="com-card-header flex">
+                <img class="flex" src="images/company/vp-banner.webp" alt="" />
+              </a>
+              <div class="com-card-content flex">
+                <h4 class="com-name flex">
+                  Ngân Hàng TMCP Việt Nam Thịnh Vượng (VPBank)
+                </h4>
+                <span class="flex"
+                  >" VPBank xác định mục tiêu chiến lược phát triển 5 năm lần
+                  thứ 3 (2022-2026) trở thành ngân hàng có vị trí vững chắc
+                  trong Top 3 ngân hàng lớn nhất Việt Nam và đạt quy mô thuộc
+                  Top 100 ngân hàng lớn nhất châu Á.Thành tựu của hai giai đoạn
+                  phát triển liền trước (2012-2017 và 2018-2022) đã tạo nền tảng
+                  và xung lực toàn diện để VPBank tự..."</span
+                >
+              </div>
+            </div>
+            <div class="com-card flex">
+              <a href="company_detail.html" class="com-card-header flex">
+                <img
+                  class="flex"
+                  src="images/company/vuihoc-banner.webp"
+                  alt=""
+                />
+              </a>
+              <div class="com-card-content flex">
+                <h4 class="com-name flex">VUIHOC.vn</h4>
+                <span class="flex"
+                  >" VUIHOC là trường học trực tuyến cho học sinh từ lớp 1 đến
+                  lớp 12 với sứ mệnh "đem cơ hội tiếp cận bình đẳng các chương
+                  trình giáo dục chất lượng cao, chi phí hợp lý tới học sinh
+                  trên mọi miền tổ quốc”. Ra mắt vào năm 2019, VUIHOC đã nhanh
+                  chóng phát triển và trở thành nền tảng Edtech (Giáo dục - Công
+                  nghệ) hàng đầu tại..."</span
+                >
+              </div>
+            </div>
+            <div class="com-card flex">
+              <a href="company_detail.html" class="com-card-header flex">
+                <img
+                  class="flex"
+                  src="images/company/uniqlo-banner.webp"
+                  alt=""
+                />
+              </a>
+              <div class="com-card-content flex">
+                <h4 class="com-name flex">UNIQLO VIETNAM CO., LTD.</h4>
+                <span class="flex"
+                  >" - UNIQLO là một thương hiệu của Fast Retailing, công ty cổ
+                  phần bán lẻ hàng đầu Nhật Bản có trụ sở toàn cầu tại Tokyo,
+                  Nhật Bản. UNIQLO là thương hiệu lớn nhất trong tám thương hiệu
+                  chính của Tập đoàn Fast Retailing. Với doanh thu toàn cầu
+                  khoảng 2,7 nghìn tỷ yên trong năm tài chính 2023 tính đến ngày
+                  31 tháng 8 năm 2023. Fast Retailing là..."</span
+                >
+              </div>
+            </div>
+            <div class="com-card flex">
+              <a href="company_detail.html" class="com-card-header flex">
+                <img
+                  class="flex"
+                  src="images/company/sunlife-banner.webp"
+                  alt=""
+                />
+              </a>
+              <div class="com-card-content flex">
+                <h4 class="com-name flex">
+                  CÔNG TY TNHH BẢO HIỂM NHÂN THỌ SUN LIFE VIỆT NAM
+                </h4>
+                <span class="flex"
+                  >" Chỉ trong vòng hai năm 2019 – 2020, Sun Life Việt Nam đã ký
+                  các thỏa thuận hợp tác phân phối độc quyền các sản phẩm bảo
+                  hiểm nhân thọ qua kênh ngân hàng (Bancassurance) với ngân hàng
+                  TMCP Tiên Phong (TPBank) và Ngân hàng Thương mại Cổ phần Á
+                  Châu (ACB). Đây đều là các thỏa thuận hợp tác phân phối Bảo
+                  hiểm Nhân thọ độc quyền trong vòng..."</span
+                >
+              </div>
+            </div>
+            <div class="com-card flex">
+              <a href="company_detail.html" class="com-card-header flex">
+                <img class="flex" src="images/company/lg-banner.webp" alt="" />
+              </a>
+              <div class="com-card-content flex">
+                <h4 class="com-name flex">Công Ty TNHH LG CNS VIỆT NAM</h4>
+                <span class="flex"
+                  >" Là Chuyên gia Chuyển đổi Kỹ thuật số (DX) và Đối tác tăng
+                  trưởng kỹ thuật số, chúng tôi cống hiến các kỹ năng DX của
+                  mình để giúp các khách hàng lớn đạt được thành công. LG CNS
+                  dẫn đầu công nghệ Cloud, AI/Big data, smart factory, smart
+                  logistics, smart city, blockchain, và các công nghệ chuyển đổi
+                  số khác"</span
+                >
+              </div>
+            </div>
+            <div class="readmore flex">
+              <div class="btn-more flex">
+                <a href="#">Xem thêm</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!------CONTENT SECTION END------>
+
+    <!------FOOTER SECTION BEGIN------->
+    <footer>
+      <div class="width-100 footer-background">
+        <div class="container flex footer-section">
+          <div class="list-access flex">
+            <h3>Về EasyClick</h3>
+            <ul class="footer-list">
+              <li><a href="about.html">Giới thiệu</a></li>
+              <li><a href="construction.html">Tuyển dụng</a></li>
+              <li><a href="contact.html">Liên hệ</a></li>
+              <li><a href="error404.html">Blogs</a></li>
+              <li><a href="error404.html">Chính sách bảo mật</a></li>
+              <li><a href="error404.html">Quy chế hoạt động</a></li>
+            </ul>
+          </div>
+
+          <div class="list-access flex">
+            <h3>Nhà tuyển dụng</h3>
+            <ul class="footer-list">
+              <li><a href="construction.html">Đăng tin tuyển dụng</a></li>
+              <li><a href="construction.html">Tìm kiếm hồ sơ</a></li>
+              <li><a href="construction.html">Kết nối ứng viên</a></li>
+              <li><a href="construction.html">Mô tả công việc</a></li>
+            </ul>
+          </div>
+          <div class="list-access flex">
+            <h3>Hồ sơ và CV</h3>
+            <ul class="footer-list">
+              <li><a href="profile.html">Quản lý profile</a></li>
+              <li><a href="construction.html">Hướng dẫn viết CV</a></li>
+              <li><a href="construction.html">Review</a></li>
+              <li><a href="construction.html">Trắc nghiệm tâm lý</a></li>
+            </ul>
+          </div>
+          <div class="list-access flex">
+            <h3>Xây dựng sự nghiệp</h3>
+            <ul class="footer-list">
+              <li><a href="jobs.html">Việc làm tốt nhất</a></li>
+              <li><a href="jobs.html">Việc làm lương cao</a></li>
+              <li><a href="jobs.html">Việc làm quản lý</a></li>
+              <li><a href="jobs.html">Việc làm IT</a></li>
+              <li><a href="jobs.html">Việc làm Full-time</a></li>
+              <li><a href="jobs.html">Việc làm Part-time</a></li>
+            </ul>
+          </div>
+          <div class="list-access flex">
+            <h3>Hỗ trợ khách hàng</h3>
+            <ul class="get-in-touch">
+              <li>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p>E-MAIL: info@easyclick.com</p>
+              </li>
+              <li>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <p>Đại chỉ: 123 Lê Văn Lương, Nhà Bè, Tp.Hồ Chí Minh</p>
+              </li>
+              <li>
+                <i class="fa fa-fax" aria-hidden="true"></i>
+                <p>HOTLINE: (+84) -123 456 789</p>
+              </li>
+              <li>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <p>WEBSITE: https://www.easyclick.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr style="border-width: thin" />
+        <span class="copyright flex"
+          >Copyright © 2024 by Nguyen Diep Thai Ha - Nền tảng tìm kiếm việc làm
+          thông minh, uy tín.
+        </span>
+      </div>
+    </footer>
+    <!------FOOTER SECTION END------>
+
+    <script src="jscript.js"></script>
+  </body>
+</html>
